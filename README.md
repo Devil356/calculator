@@ -2,7 +2,7 @@
 
 Запуск калькулятора осуществляется следующим способом:
 
-AbstractOperation.calculate("+","3 2");
+AbstractOperation.calculate("+", "3 2");
 
 Результат 5.
 
