@@ -1,9 +1,9 @@
 # calculator
 
-Запуск калькулятора осуществляется следующим образом:
+To run calc you need to follow next steps:
 
-AbstractOperation.calculate("+", "3 2");
+1. AbstractOperation.calculate("+", "3 2");
 
-Результат 5.
+Result is 5.
 
-Аналогичным образом выполняется для вычитания, умножения, и деления.
+Same for multiplication, division, substraction.
