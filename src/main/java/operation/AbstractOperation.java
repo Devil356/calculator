@@ -1,12 +1,12 @@
 package operation;
 
 import exception.CalcException;
-import helper.Helper;
+import util.CalcUtil;
 
 public abstract class AbstractOperation implements Operation {
 
     public static Double calculate(String operation, String digits) {
-        Double[] parsedDigits = Helper.parseIntoTwoDoubles(digits);
+        Double[] parsedDigits = CalcUtil.parseIntoTwoDoubles(digits);
         Operation o;
         switch (operation.trim()){
             case "+":
@@ -22,7 +22,7 @@ public abstract class AbstractOperation implements Operation {
                 o = new Division(parsedDigits);
                 break;
             default:
-                throw new CalcException("Невалидная операция. Введите одну из операций: +, -, *, /");
+                throw new CalcException("Invalid operation. Please, choose operation from those: +, -, *, /");
         }
         return o.calculate(o.getDigits());
     }

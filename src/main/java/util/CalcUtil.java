@@ -1,8 +1,8 @@
-package helper;
+package util;
 
 import exception.CalcException;
 
-public class Helper {
+public class CalcUtil {
 
     public static Double[] parseIntoTwoDoubles(String s){
         String[] strings = split(s);
